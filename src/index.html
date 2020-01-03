@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no,address=no,email=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Markdown to HTMLフォーム</title>
+
+	<!-- css -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/index.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <!-- header -->
+    <header class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <h1><i class="fa fa-fw fa-arrow-down" aria-hidden="true"></i>Markdown to HTMLフォーム</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+    <!-- main -->
+    <main>
+        <section class="container-fluid">
+            <div class="row">
+               <section class="col-xs-12">
+                    <h3><i class="fa fa-fw fa-question-circle" aria-hidden="true"></i>このフォームについて</h3>
+                    <p>このフォームは、MarkdownをHTMLに変換するためのフォームです。巷のMarkdown変換ツールでも良いのですが、h1～h6にidを付与させたくなかったので、marked.jsで変換後、idを除去する処理を追加したものになります。</p>
+                    <h3><i class="fa fa-fw fa-info-circle" aria-hidden="true"></i>フォームの使い方</h3>
+                    <ol>
+                        <li>左または上のMarkdownのテキストエリアに、Markdownのドキュメントを入力します。</li>
+                        <li>テキストエリアからフォーカスが外れた時点で、右または下のHTMLのテキストエリアに、Markdownから変換されたHTMLが出力されます。</li>
+                    </ol>
+                    <p>※サンプルで入っているMarkdownテキストは削除してください。</p>
+                </section>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="row">
+                <section class="col-xs-12 col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="mdTextarea"><i class="fa fa-fw fa-cloud-upload" aria-hidden="true"></i>Markdown</label>
+                        <div class="col-sm-10">
+                            <textarea placeholder="# タイトル" rows="10" class="form-control" id="mdTextarea">
+# タイトル
+
+テキスト
+
+- リスト1
+- リスト2
+- リスト3
+</textarea>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-xs-12 col-md-6">
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="htmlTextarea"><i class="fa fa-fw fa-cloud-download" aria-hidden="true"></i>HTML</label>
+                        <div class="col-sm-10">
+                            <textarea placeholder="<h1>タイトル</h1>" rows="10" class="form-control" id="htmlTextarea"></textarea>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="row">
+                <section class="col-xs-12">
+                    <h3><i class="fa fa-fw fa-book" aria-hidden="true"></i>参考</h3>
+                    <ul>
+                        <li><a href="http://phiary.me/marked-js-html-to-markdown-in-browser/">『marked.js』 を使ってブラウザ上で markdown を html に変換する方法 | phiary</a></li>
+                        <li><a href="http://qiita.com/hrdaya/items/291276a5a20971592216">JavaScriptで正規表現（文字列置換え編） - Qiita</a></li>
+                        <li><a href="http://qiita.com/yhikishima/items/819a486d8913cd89d1f1">Javascriptの正規表現 - Qiita</a></li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+    </main>
+    <!-- /main -->
+
+    <p class="returnPageTop"><i class="fa fa-fw fa-arrow-up" aria-hidden="true"></i></p>
+    <!-- footer -->
+    <footer>
+        <small class="copyRight">Copyright &#169; 2017 アルム＝バンド All Right Reserved</small>
+    </footer>
+    <!-- /footer -->
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>  
+<script src="./js/index.js"></script>
+</body>
+</html>
