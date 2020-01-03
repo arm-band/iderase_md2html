@@ -1,1 +1,66 @@
-/*! cross-platform-yu-gothic v0.1.1 | MIT License | github.com/rxon/cross-platform-yu-gothic */@font-face{font-family:"cross-platform-yu-gothic";font-weight:100;src:local("YuGothic-Light"),local("Yu Gothic Light")}@font-face{font-family:"cross-platform-yu-gothic";font-weight:200;src:local("YuGothic-Light"),local("Yu Gothic Light")}@font-face{font-family:"cross-platform-yu-gothic";font-weight:300;src:local("YuGothic-Regular"),local("Yu Gothic")}@font-face{font-family:"cross-platform-yu-gothic";font-weight:400;src:local("YuGothic-Medium"),local("Yu Gothic Medium"),local("YuGothic-Regular")}@font-face{font-family:"cross-platform-yu-gothic";font-weight:500;src:local("YuGothic-Medium"),local("Yu Gothic Medium"),local("YuGothic-Regular")}@font-face{font-family:"cross-platform-yu-gothic";font-weight:600;src:local("YuGothic-Bold"),local("Yu Gothic")}@font-face{font-family:"cross-platform-yu-gothic";font-weight:700;src:local("YuGothic-Bold"),local("Yu Gothic")}@font-face{font-family:"cross-platform-yu-gothic";font-weight:800;src:local("YuGothic-Bold"),local("Yu Gothic")}@font-face{font-family:"cross-platform-yu-gothic";font-weight:900;src:local("YuGothic-Bold"),local("Yu Gothic")}a,a:link{color:#58C7AD;text-decoration:none;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-ms-transition:all 0.3s ease;transition:all 0.3s ease}a:visited{color:#359e85;text-decoration:none}a:hover,a:active{color:#91dac9;text-decoration:underline}html,body{font-family:cross-platform-yu-gothic, sans-serif}@-ms-viewport{width:auto;initial-scale:1}main{background-color:#fff;color:#333}footer{clear:both;padding:5px 5px 10px 5px;background-color:#1586BF;color:#fff}.copyRight{display:block;margin:0 auto;font-size:13px;text-align:center}.returnPageTop{z-index:100;display:none;position:fixed;bottom:2%;right:6%}.returnPageTop i{display:block;font-size:22px;width:44px;height:44px;line-height:44px;background-color:#37aee9;border-radius:8px;color:#fff;text-align:center;-webkit-box-shadow:3px 3px 3px rgba(51,51,51,0.4);-moz-box-shadow:3px 3px 3px rgba(51,51,51,0.4);-ms-box-shadow:3px 3px 3px rgba(51,51,51,0.4);box-shadow:3px 3px 3px rgba(51,51,51,0.4);cursor:pointer;-webkit-transition:all 0.3s ease;-moz-transition:all 0.3s ease;-ms-transition:all 0.3s ease;transition:all 0.3s ease}.returnPageTop i:hover,.returnPageTop i:active{background-color:#7ccaf1}header.navbar.navbar-default{background-color:#1586BF}header.navbar.navbar-default .navbar-header{padding:15px 10px}header.navbar.navbar-default h1{color:#fff;margin-top:0;margin-bottom:0}main .container-fluid{margin-bottom:48px}main .col-xs-12.col-md-6{margin-top:11px;margin-bottom:22px;}
+@charset "utf-8";
+
+a,
+a:link {
+    color: #58C7AD;
+    text-decoration: none;
+    transition:all 0.3s ease;
+}
+a:visited {
+    color: #359e85;
+    text-decoration:none;
+}
+a:hover,
+a:active {
+    color: #91dac9;
+    text-decoration: underline;
+}
+main {
+    background-color: #fff;
+    color: #333;
+}
+footer {
+    clear: both;
+    padding: 5px 5px 10px 5px;
+    background-color: #1586BF;
+    color: #fff;
+}
+.copyRight {
+    display: block;
+    margin: 0 auto;
+    font-size: 13px;
+    text-align: center;
+}
+.returnPageTop {
+    z-index: 100;
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 6%;
+}
+.returnPageTop i {
+    display: block;
+    font-size: 22px;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    background-color: #37aee9;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 3px 3px 3px rgba(51,51,51,0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.returnPageTop i:hover,
+.returnPageTop i:active {
+    background-color: #7ccaf1;
+}
+header.navbar.navbar-default {
+    background-color: #1586BF;
+}
+header.navbar.navbar-default h1 {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+}

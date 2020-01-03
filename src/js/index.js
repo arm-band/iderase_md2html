@@ -1,7 +1,7 @@
 $(function() {
     //ページトップへ戻る
     pageTop();
-    
+
     //ブラー時発動
     $("#mdTextarea").on("blur", function(){
         md2html();
@@ -12,29 +12,29 @@ $(function() {
 function pageTop() {
     var returnPageTop = $(".returnPageTop");
 
-	//下にスクロールしたらヘッダの高さを縮小させる
-	var startPos = 0;
-	$(window).on("scroll", function(){
-		var currentPos = $(this).scrollTop();
-		//ページトップへスクロールして戻る
-		if (currentPos > 400) {
-			returnPageTop.fadeIn();
-		} else {
-			returnPageTop.fadeOut();
-		}
-	});
+    //下にスクロールしたらヘッダの高さを縮小させる
+    var startPos = 0;
+    $(window).on("scroll", function(){
+        var currentPos = $(this).scrollTop();
+        //ページトップへスクロールして戻る
+        if (currentPos > 400) {
+            returnPageTop.fadeIn();
+        } else {
+            returnPageTop.fadeOut();
+        }
+    });
 
-	//ページトップへスクロールして戻る
-	returnPageTop.on("click", function () {
-		$("body, html").animate({ scrollTop: 0 }, 1000, "swing");
-		return false;
-	});
+    //ページトップへスクロールして戻る
+    returnPageTop.on("click", function () {
+        $("body, html").animate({ scrollTop: 0 }, 1000, "swing");
+        return false;
+    });
 }
 
 //ID削除
 function idEraser(str) {
-    var filterdStr = str.replace(/ id="[\w\-]*"/gi, '');
-    
+    var filterdStr = str.replace(/ id="(.)*"/gi, '');
+
     return filterdStr;
 }
 
@@ -55,6 +55,6 @@ function md2html() {
 window.onload = function() {
     //初期動作
     md2html();
-    
+
     $("#mdTextarea").select();
 };
