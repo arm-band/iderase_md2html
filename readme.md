@@ -9,6 +9,7 @@ MarkdownをHTMLに変換するためのフォームです。
 
 ## Published Date
 
-2017/5/18
-
-- ver 1.0
+- 2020/1/3
+    - ver 2.0
+- 2017/5/18
+    - ver 1.0
